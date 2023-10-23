@@ -32,7 +32,7 @@ class Solution {
         return answer;
     }
 
-    // 4. 괄호의 짝이 맞는지 확인하는 함수
+    // 2-2. 괄호의 짝이 맞는지 확인하는 함수
     private boolean isPair(char open, char close) {
         return (open == '(' && close == ')') || (open == '{' && close == '}') || (open == '[' && close == ']');
     }
