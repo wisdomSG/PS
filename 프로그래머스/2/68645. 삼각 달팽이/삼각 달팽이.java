@@ -1,8 +1,8 @@
 class Solution {
 
     // 방향 3가지 설정 
-    private static final int[] dx = {0, 1, -1}; // [오른쪽, 아래, 대각선 위]
-    private static final int[] dy = {1, 0, -1}; // [오른쪽, 아래, 대각선 위]
+    private static final int[] dx = {0, 1, -1}; // [아래, 오른쪽, 대각선 위]
+    private static final int[] dy = {1, 0, -1}; // [아래, 오른쪽, 대각선 위]
 
     public int[] solution(int n) {
         int[][] arr = new int[n][n];
