@@ -16,10 +16,6 @@ class Solution {
         }
         
         // 짝이 제대로 맞았으면 stack은 비워있어야함.
-        if (stack.isEmpty()) {
-            return true;
-        } else {
-            return false;
-        }
+        return stack.isEmpty();
     }
 }
