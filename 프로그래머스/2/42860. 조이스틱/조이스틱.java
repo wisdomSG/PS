@@ -14,7 +14,9 @@ class Solution {
                 count++;
             }
             
+            // 현재위치에서 오른쪽으로 진행한 후 'A'가 아닌 문자를 만날 때 까지의 이동거리 계산하고 오른쪽으로 진행한 거리에서 왼쪽으로 돌아가는 거리(i)를 더함
             move = Math.min(move, i * 2 + name.length() - count);
+            // 현재 위치에서 왼쪽으로 진행한 후 'A'가 아닌 문자를 만날 때까지의 이동거리 계산하고 왼쪽으로 진행한 거리에서 오른쪽으로 돌아가는 거리(i)를 더함 
             move = Math.min(move, (name.length() - count) * 2 + i);
         }
         
