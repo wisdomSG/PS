@@ -1,21 +1,15 @@
+import java.util.*;
+
 class Solution {
     public int[] solution(int[] arr) {
-        int[] answer = new int[size(arr)];
-        int idx = 0;
-        for(int i=0; i<arr.length; i++) {
-            for(int j=0; j<arr[i]; j++) {
-                answer[idx] = arr[i];
-                idx ++;
-            }
+        List<Integer> answer = new ArrayList<>();
+        
+        for(int num: arr) {
+            answer.addAll(Collections.nCopies(num, num));
         }
-        return answer;
+        
+        return answer.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
     }
-    
-    private int size(int[] arr) {
-        int sum = 0;
-        for(int i=0; i<arr.length; i++) {
-            sum += arr[i];
-        }
-        return sum;
-    } 
 }
