@@ -5,7 +5,6 @@ class Solution {
         for(char c: answer.toCharArray()) {
             k += Character.getNumericValue(c);
         }
-        if(x % k ==0) return true;
-        return false;
+        return x % k == 0;
     }
 }
